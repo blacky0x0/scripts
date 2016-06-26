@@ -1,0 +1,14 @@
+
+
+apt-get install zsh
+## https://github.com/robbyrussell/oh-my-zsh
+## https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet
+## https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+vim ~/.zshrc
+
+plugins=(git)
+
+
+
+
