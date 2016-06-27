@@ -4,10 +4,10 @@
 ## https://www.linode.com/docs/databases/redis/redis-on-ubuntu-12-04-precise-pangolin
 apt-get install redis-server
 # or
-add-apt-repository ppa:chris-lea/redis-server
-apt-get update
-apt-get install redis-server
-redis-benchmark -q -n 1000 -c 10 -P 5
+#add-apt-repository ppa:chris-lea/redis-server
+#apt-get update
+#apt-get install redis-server
+#redis-benchmark -q -n 1000 -c 10 -P 5
 
 ## Clients for redis
 ## redis desktop manager
@@ -18,7 +18,13 @@ wget https://github.com/uglide/RedisDesktopManager/releases/download/0.8.3/redis
 dpkg -i redis-desktop-manager_0.8.3-120_amd64.deb
 apt-get -f install
 redis-desktop-manager
+## if any issues
+## http://stackoverflow.com/questions/34427040/redis-desktop-dependency-on-libicu52-for-ubuntu12-04
+wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu52_52.1-8ubuntu0.2_amd64.deb
+
+
 ## -------------------
 ## fastoredis
 ## http://fastoredis.com/download_linux.html
+
 
