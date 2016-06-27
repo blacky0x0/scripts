@@ -1,0 +1,23 @@
+## https://githowto.com/ru/setup
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+Параметры установки окончаний строк
+Также, для пользователей Unix/Mac:
+
+ВЫПОЛНИТЬ:
+git config --global core.autocrlf input
+git config --global core.safecrlf true
+Для пользователей Windows:
+
+ВЫПОЛНИТЬ:
+git config --global core.autocrlf true
+git config --global core.safecrlf true
+
+
