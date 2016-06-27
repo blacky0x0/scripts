@@ -1,0 +1,25 @@
+sudo apt-get install postgresql
+sudo apt-get install pgadmin3
+
+## login as root and set pass
+sudo -u postgres psql
+#psql (9.5.3)
+#Type "help" for help.
+postgres=# \password postgres
+
+## change auth method
+sudo vim /etc/postgresql/9.5/main/pg_hba.conf
+>--------------------<
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+local   all             postgres                                md5
+local   all             all                                     md5
+host    all             all             127.0.0.1/32            md5
+>--------------------<
+
+## restart service
+service postgresql restart
+
+## login 
+psql -U postgres -W
+psql -h localhost -U postgres -W 
+
