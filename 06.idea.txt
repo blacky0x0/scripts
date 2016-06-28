@@ -1,0 +1,4 @@
+
+
+Idea -> Settings -> Version Control -> Git -> SSH executable = native
+
