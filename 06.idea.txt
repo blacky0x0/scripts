@@ -1,4 +1,4 @@
 
 
-Idea -> Settings -> Version Control -> Git -> SSH executable = native
+## Idea -> Settings -> Version Control -> Git -> SSH executable = native
 
