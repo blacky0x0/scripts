@@ -23,3 +23,19 @@ service postgresql restart
 psql -U postgres -W
 psql -h localhost -U postgres -W 
 
+
+## POSTGIS
+## http://postgis.net/install/
+sudo apt-get install postgresql-9.5-postgis-2.2
+sudo apt-get install postgresql-9.5-pgrouting
+psql -U postgres -W
+
+postgres=# CREATE EXTENSION adminpack;
+postgres=# CREATE EXTENSION postgis;
+postgres=# CREATE EXTENSION postgis_topology;
+postgres=# CREATE EXTENSION postgis_sfcgal;
+postgres=# CREATE EXTENSION fuzzystrmatch;
+postgres=# CREATE EXTENSION address_standardizer;
+postgres=# CREATE EXTENSION address_standardizer_data_us;
+postgres=# CREATE EXTENSION postgis_tiger_geocoder;
+
